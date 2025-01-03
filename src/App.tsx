@@ -7,7 +7,6 @@ import { Input } from './components/ui/input'
 function App() {
   const navigate = useNavigate();
 
-
   return (
     <>
       <div className='bg-zinc-950 container flex justify-center items-center'>
@@ -18,7 +17,7 @@ function App() {
           <CardContent>
             <form className='flex flex-col gap-2 justify-center items-center'>
               <Input type='email' placeholder='Email' className='text-white w-80 h-12' />
-              <Input type='password' placeholder='Senha' className='text-white w-80 h-12'/>
+              <Input type='password' placeholder='Senha' className='text-white w-80 h-12' />
               <Button variant="secondary" className='mt-5 min-w-24 text-base bg-purple-600 text-white' onClick={(e) => {
                 e.preventDefault()
                 navigate('/dashboard')
